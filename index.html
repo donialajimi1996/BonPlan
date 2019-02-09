@@ -1,0 +1,666 @@
+<link
+rel="stylesheet"
+href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+crossorigin="anonymous"
+/>
+<script
+src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+crossorigin="anonymous"
+></script>
+<script
+src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+crossorigin="anonymous"
+></script>
+<script
+src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+crossorigin="anonymous"
+></script>
+
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"></script>
+<!------ Include the above in your HEAD tag ---------->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    
+    <title>Bon plan</title>
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
+      integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/"
+      crossorigin="anonymous"
+    />
+    <link rel="icon" href="res/food_icon_1493922240.png" type="png" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body id="contactus">
+    <div class="wrapper">
+      <!--menu bar-->
+
+      <header id="home" class="home">
+        <nav >
+          <div class="menu-icon"><i class="fa fa-bars fa-2x"></i></div>
+          <div class="logo"><i class="fas fa-utensils"></i> Bon Plan</div>
+          <div class="menu">
+            <ul>
+              <li>
+                <i class="fas fa-concierge-bell"></i> <a href="#" data-value="home">Home</a>
+              </li>
+              <li><a href="#" data-value="about">About</a></li>
+              <li><a href="#" data-value="fastfood">FastFood</a></li>
+              <li><a href="#" data-value="morningfood">Breakfast</a></li>
+              <li><a href="#" data-value="sweetdesert">Sweet Desert</a></li>
+              <li><a href="#" data-value="onsfood">Ons Food</a></li>
+              <li>
+                <i class="fas fa-envelope"></i>
+                <a href="#" data-value="contact">Contact Us</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </header>
+
+      <!--about-->
+      
+        <div class="about" id="about">
+          <div >
+            <h2>About Us</h2>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.Donec
+              rutrum fringilla ante ac imperdiet. Nam interdum arcu massa, nec
+              mattis lacus hendrerit quis. Nam lacus quam, viverra id neque
+              quis, convallis elementum enim.Integer nec porttitor nulla. Nulla
+              ac est facilisis, congue ex quis, fringilla nunc. Lorem ipsum
+              dolor sit amet, consectetur adipiscing elit.Donec rutrum fringilla
+              ante ac imperdiet. Nam interdum arcu massa, nec mattis lacus
+              hendrerit quis. Nam lacus quam, viverra id neque quis, convallis
+              elementum enim.Integer nec porttitor nulla. Nulla ac est
+              facilisis, congue ex quis, fringilla nunc. Lorem ipsum dolor sit
+              amet, consectetur adipiscing elit.Donec rutrum fringilla ante ac
+              imperdiet. Nam interdum arcu massa, nec mattis lacus hendrerit
+              quis. Nam lacus quam, viverra id neque quis, convallis elementum
+              enim.Integer nec porttitor nulla. Nulla ac est facilisis, congue
+              ex quis, fringilla nunc.
+            </p>
+          </div>
+        </div>
+      </div>
+      <!--slide show-->
+      <div id="myCarousel">
+      <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+          <ol class="carousel-indicators">
+            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+          </ol>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img class="d-block w-100" src="res/yuccacover.jpg" alt="First slide" class="img-fluid">
+              <div class="carousel-caption d-none d-md-block">
+                  
+                  <p id="icon"><span title="Yucca facebook" onclick="yuccafacebook()"><i class="fab fa-facebook-f"></i></span></p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img class="d-block w-100" src="res/plan.jpg" alt="Second slide" class="img-fluid">
+              <div class="carousel-caption d-none d-md-block">
+                  
+                <p id="icon"><span title="PLANET facebook" onclick="planetfacebook()"><i class="fab fa-facebook-f"></i></span></p>
+            </div>
+            </div>
+            <div class="carousel-item">
+              <img class="d-block w-100" src="res/danmark.jpg" alt="Third slide" class="img-fluid">
+              <div class="carousel-caption d-none d-md-block">
+                  
+                <p id="icon"><span title="DANMARK facebook" onclick="danmarkfacebook()"><i class="fab fa-facebook-f"></i></span></p>
+            </div>
+            </div>
+          </div>
+          <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
+        </div>
+      </div>
+<!-- end slide show -->
+      <!--fastfood -->
+      <div id="fastfood" class="fastfood">
+        <div class="container-fluid mt-3">
+          <div class="row d-flex justify-content-center  mb-3">
+            <div class="img" class="p-2 " ">
+              <img
+                src="res/plan-160118-1.jpg"
+                alt="escalope pané farci au gruyère"
+              />
+              <p>Escalope pané farci au gruyère</p>
+              <p><button onclick="document.getElementById('id01').style.display='block'" style="width:auto;" ><i class="fas fa-map-marker-alt" ></i> 
+              </button>     PLAN B</p>
+              <p>Price: 8dt</p>
+              
+            </div>
+            <div class="img" class="p-2 ">
+              <img src="res/sanf.jpg" alt="yucca" />
+              <p>Sandwish Escalope</p>
+              <p><button onclick="document.getElementById('id02').style.display='block'" style="width:auto;" ><i class="fas fa-map-marker-alt" ></i> 
+              </button> Yucca's</p>
+              <p>Price: 7.5dt</p>
+             
+            </div>
+            <div class="img" class="p-2 ">
+              <img
+                src="res/49643145_320533441921855_4321201364265861120_n.jpg"
+                alt="burito"
+              />
+              <p>Le Burrito au chawarma de poulet</p>
+              <p><button onclick="document.getElementById('id03').style.display='block'" style="width:auto;" ><i class="fas fa-map-marker-alt" ></i> 
+              </button> TANDO's</p>
+              <p>Price: 7.5dt</p>
+              
+            </div>
+            <div class="img" class="p-2 ">
+              <img
+                src="res/48333188_306393396669193_1845474595855925248_n.jpg"
+                alt="pizza"
+              />
+              <p>Pizza speciale</p>
+              <p><button onclick="document.getElementById('id04').style.display='block'" style="width:auto;" ><i class="fas fa-map-marker-alt" ></i> 
+              </button> TANDO's</p>
+              <p>Price: 10.5dt</p>
+              
+            </div>
+            <div class="img"class="p-2 ">
+              <img
+                src="res/48375615_311329759508890_7223300312222662656_n.jpg"
+                alt="lasagne"
+              />
+              <p>Lasagne au viande hache</p>
+              <p><button onclick="document.getElementById('id05').style.display='block'" style="width:auto;" ><i class="fas fa-map-marker-alt" ></i> 
+              </button> TANDO's</p>
+              <p>Price: 9.9dt</p>
+             
+            </div>
+            <div class="img" class="p-2 ">
+              <img
+                src="res/26734044_1947713648591093_7641885002605815614_n.jpg"
+                alt="frango"
+              />
+              <p>Combo</p>
+              <p><button onclick="document.getElementById('id06').style.display='block'" style="width:auto;" ><i class="fas fa-map-marker-alt" ></i> 
+              </button> FRANGO</p>
+              <p>Price: 12.5dt</p>
+             
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--Breakfast-->
+      
+      <div class="container-fluid mt-3">
+      <div id="morningfood" class="row morningfood d-flex justify-content-center  mb-3">
+        <div class="img" class="p-2 ">
+          <img src="res/yucca.jpg" alt="yucca" />
+          <p>Breakfast YUCCA</p>
+          <p><button onclick="document.getElementById('id07').style.display='block'" style="width:auto;" ><i class="fas fa-map-marker-alt" ></i> 
+          </button>     Yucca</p>
+          <p>Price: 15dt</p>
+          
+        </div>
+        <div class="img" class="p-2 ">
+          <img src="res/yucca1.jpg" alt="BreakfastTURK" />
+          <p>Breakfast TURK</p>
+          <p><button onclick="document.getElementById('id08').style.display='block'" style="width:auto;" ><i class="fas fa-map-marker-alt" ></i> 
+          </button>     Yucca</p>
+          <p>Price: 13.5dt</p>
+         
+        </div>
+        <div class="img"class="p-2 ">
+          <img src="res/yucca3.jpg" alt="brunch" />
+          <p>Brunch</p>
+          <p><button onclick="document.getElementById('id09').style.display='block'" style="width:auto;" ><i class="fas fa-map-marker-alt" ></i> 
+          </button>    Yucca</p>
+          <p>Price: 10.5dt</p>
+          
+        </div>
+        <div class="img" class="p-2 ">
+          <img src="res/grung1.jpg" alt="Breakfast1" />
+          <p>Breakfast normal</p>
+          <p><button onclick="document.getElementById('id010').style.display='block'" style="width:auto;" ><i class="fas fa-map-marker-alt" ></i> 
+          </button>     The Grunge</p>
+          <p>Price: 8.5dt</p>
+          
+        </div>
+        <div class="img" class="p-2 ">
+          <img src="res/grung2.jpg" alt="Breakfast2" />
+          <p>Breakfast special</p>
+          <p><button onclick="document.getElementById('id011').style.display='block'" style="width:auto;" ><i class="fas fa-map-marker-alt" ></i> 
+          </button>     The Grunge</p>
+          <p>Price: 10.5dt</p>
+         
+        </div>
+        <div class="img" class="p-2 ">
+          <img src="res/grung3.jpg" alt="brunch" />
+          <p>Brunch</p>
+          <p><button onclick="document.getElementById('id012').style.display='block'" style="width:auto;" ><i class="fas fa-map-marker-alt" ></i> 
+          </button>    The Grunge</p>
+          <p>Price: 13.5dt</p>
+          
+        </div>
+
+        <div class="img" class="p-2 ">
+          <img src="res/thefirst1.jpg" alt="Breakfast1" />
+          <p>Breakfast salty</p>
+          <p><button onclick="document.getElementById('id013').style.display='block'" style="width:auto;" ><i class="fas fa-map-marker-alt" ></i> 
+          </button>    The First</p>
+          <p>Price: 9.5dt</p>
+          
+        </div>
+        <div class="img" class="p-2 ">
+          <img src="res/thefirst2.jpg" alt="Breakfast2" />
+          <p>Breakfast special</p>
+          <p>   <button onclick="document.getElementById('id014').style.display='block'" style="width:auto;" ><i class="fas fa-map-marker-alt" ></i> 
+          </button>   The First</p>
+          <p>Price: 13.5dt</p>
+         
+        </div>
+        <div class="img" class="p-2 ">
+          <img src="res/first3.jpg" alt="brunch" />
+          <p>Brunch</p>
+          <p><button onclick="document.getElementById('id015').style.display='block'" style="width:auto;" ><i class="fas fa-map-marker-alt" ></i> 
+          </button>    The First</p>
+          <p>Price: 15.5dt</p>
+         
+        </div>
+      </div>
+    </div>
+      <!--sweetDesert-->
+      <div class="container-fluid mt-3">
+      <div id="sweetdesert" class="row sweetdesert d-flex justify-content-center  mb-3 ">
+        <div class="img" class="p-2 ">
+          <img src="res/gaufre.jpg" alt="Desert" />
+          <p>Gaufres nutella banane fruits sec</p>
+          <p><button onclick="document.getElementById('id10').style.display='block'" style="width:auto;" ><i class="fas fa-map-marker-alt" ></i> 
+          </button>     The Secret</p>
+          <p>Price: 9.5dt</p>
+          
+        </div>
+        <div class="img" class="p-2 ">
+          <img src="res/crepz.jpg" alt="Desert" />
+          <p>Crêpe Blacky</p>
+          <p><button onclick="document.getElementById('id11').style.display='block'" style="width:auto;" ><i class="fas fa-map-marker-alt" ></i> 
+          </button>    The Secret</p>
+          <p>Price: 8.5dt</p>
+          
+        </div>
+        <div class="img"  class="p-2">
+          <img src="res/too.jpg" alt="Desert" />
+          <p>Gaufres Nutella</p>
+          <p><button onclick="document.getElementById('id12').style.display='block'" style="width:auto;" ><i class="fas fa-map-marker-alt" ></i> 
+          </button>     The Secret</p>
+          <p>Price: 10.5dt</p>
+         
+        </div>
+      </div>
+    </div>
+      <!--onsFood-->
+      <div class="container-fluid mt-3">
+      <div id="onsfood" class="row onsfood d-flex justify-content-center  mb-3">
+        <div class="img"  class="p-2">
+          <img src="res/Deglina2.jpg" alt="Breakfast2" />
+          <p>Datte</p>
+          <p>Ons's</p>
+          <p>Price: Free</p>
+        </div>
+        <div class="img"  class="p-2">
+          <img
+            src="res/PX1000_ef74a558-057c-4208-a7cc-9692219261e7_b.jpg"
+            alt="brunch"
+          />
+          <p>Donia Water</p>
+          <p>Ons's</p>
+          <p>Price: Free</p>
+        </div>
+        <div class="img"  class="p-2">
+          <img
+            src="res/Le-jus-de-grenade-associe-aux-dattes-protege-le-coeur_exact1024x768_l.jpg"
+            alt="brunch"
+          />
+          <p>Degla</p>
+          <p>Ons's</p>
+          <p>Price: Free</p>
+        </div>
+      </div>
+    </div>
+      <!--infoList-->
+      <div id="contact" class="infoList contactus">
+        <form  id="form">
+          <h2>At Your Service</h2>
+          <br />
+          <h5>
+            Tell me a little about your event so I can begin the creation
+            process
+          </h5>
+          <br />
+          <span
+            ><p>
+              <label for="name">Name</label><br />
+              <input
+                type="username"
+                name="username"
+                id="name"
+                placeholder="Enter Your Name" required
+              />
+            </p>
+          </span>
+
+          <span
+            ><p>
+              <label for="email">Email</label><br />
+              <input
+                type="email"
+                name="email"
+                id="email"
+                placeholder="YourEmail@email.com" required
+              />
+            </p>
+          </span>
+
+          <p class="full">
+            <label for="messages">Message</label><br />
+            <textarea
+              name="message"
+              id="message"
+              cols="30"
+              rows="10" required
+            ></textarea>
+          </p>
+          <p class="full">
+            <button type="submit" onclick="onSubmit()">Submit</button>
+          </p>
+        </form>
+      </div>
+
+      <!--footer-->
+      <div class="footer">
+        <p>
+          <i class="far fa-copyright"></i> copyright 2018, made with
+          <i class="fas fa-heart"></i> & <i class="fas fa-utensils"></i> food.
+        </p>
+      </div>
+    </div>
+
+    <div id="id01" class="modal jesus">
+  
+      <form class="modal-content animate" action="/action_page.php">
+        <div class="imgcontainer">
+          <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+        </div>
+    <!--map-->
+        <div class="container">
+            <div class="mapouter">
+                <div class="gmap_canvas">
+                  <iframe width="1000" height="365" id="gmap_canvas" src="https://maps.google.com/maps?q=plan%20b%20sousse&t=&z=17&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+                  <a href="https://www.pureblack.de/werbeagentur/">pureblack.de</a>
+                </div>
+              </div>
+        </div>
+        
+      </form>
+    </div>
+    <div id="id02" class="modal">
+      <form class="modal-content animate" action="/action_page.php">
+        <div class="imgcontainer">
+          <span onclick="document.getElementById('id02').style.display='none'" class="close" title="Close Modal">&times;</span>
+        </div>
+        <div class="container">
+            <div class="mapouter"><div class="gmap_canvas"><iframe width="1000" height="365" id="gmap_canvas" src="https://maps.google.com/maps?q=yucca%20&t=&z=17&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://www.pureblack.de/werbeagentur/">pureblack.de</a></div>
+          </div>
+        </div>
+      </form>
+    </div>
+    <div id="id03" class="modal">
+      <form class="modal-content animate" action="/action_page.php">
+        <div class="imgcontainer">
+          <span onclick="document.getElementById('id03').style.display='none'" class="close" title="Close Modal">&times;</span>
+        </div>
+        <div class="container">
+            <div class="mapouter"><div class="gmap_canvas"><iframe width="1000" height="365" id="gmap_canvas" src="https://maps.google.com/maps?q=tando's&t=&z=17&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://www.pureblack.de/werbeagentur/">pureblack.de</a></div>
+          </div>
+        </div>
+      </form>
+    </div>
+    <div id="id04" class="modal">
+      <form class="modal-content animate" action="/action_page.php">
+        <div class="imgcontainer">
+          <span onclick="document.getElementById('id04').style.display='none'" class="close" title="Close Modal">&times;</span>
+        </div>
+        <div class="container">
+            <div class="mapouter"><div class="gmap_canvas"><iframe width="1000" height="365" id="gmap_canvas" src="https://maps.google.com/maps?q=tando's&t=&z=17&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://www.pureblack.de/werbeagentur/">pureblack.de</a></div>
+          </div>
+        </div>
+      </form>
+    </div>
+    <div id="id05" class="modal">
+      <form class="modal-content animate" action="/action_page.php">
+        <div class="imgcontainer">
+          <span onclick="document.getElementById('id05').style.display='none'" class="close" title="Close Modal">&times;</span>
+        </div>
+        <div class="container">
+            <div class="mapouter"><div class="gmap_canvas"><iframe width="1000" height="365" id="gmap_canvas" src="https://maps.google.com/maps?q=tando's&t=&z=17&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://www.pureblack.de/werbeagentur/">pureblack.de</a></div>
+          </div>
+        </div>
+      </form>
+    </div>
+    <div id="id06" class="modal">
+      <form class="modal-content animate" action="/action_page.php">
+        <div class="imgcontainer">
+          <span onclick="document.getElementById('id06').style.display='none'" class="close" title="Close Modal">&times;</span>
+        </div>
+        <div class="container">
+            <div class="mapouter"><div class="gmap_canvas"><iframe width="1000" height="365" id="gmap_canvas" src="https://maps.google.com/maps?q=frango&t=&z=17&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://www.pureblack.de/werbeagentur/">pureblack.de</a></div>
+          </div>
+        </div>
+      </form>
+    </div>
+    <div id="id07" class="modal">
+      <form class="modal-content animate" action="/action_page.php">
+        <div class="imgcontainer">
+          <span onclick="document.getElementById('id07').style.display='none'" class="close" title="Close Modal">&times;</span>
+        </div>
+        <div class="container">
+            <div class="mapouter"><div class="gmap_canvas"><iframe width="1000" height="365" id="gmap_canvas" src="https://maps.google.com/maps?q=yucca%20&t=&z=17&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://www.pureblack.de/werbeagentur/">pureblack.de</a></div>
+          </div>
+        </div>
+      </form>
+    </div>
+    <div id="id08" class="modal">
+      <form class="modal-content animate" action="/action_page.php">
+        <div class="imgcontainer">
+          <span onclick="document.getElementById('id08').style.display='none'" class="close" title="Close Modal">&times;</span>
+        </div>
+        <div class="container">
+            <div class="mapouter"><div class="gmap_canvas"><iframe width="1000" height="365" id="gmap_canvas" src="https://maps.google.com/maps?q=yucca%20&t=&z=17&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://www.pureblack.de/werbeagentur/">pureblack.de</a></div>
+          </div>
+        </div>
+      </form>
+    </div>
+    <div id="id09" class="modal">
+      <form class="modal-content animate" action="/action_page.php">
+        <div class="imgcontainer">
+          <span onclick="document.getElementById('id09').style.display='none'" class="close" title="Close Modal">&times;</span>
+        </div>
+        <div class="container">
+            <div class="mapouter"><div class="gmap_canvas"><iframe width="1000" height="365" id="gmap_canvas" src="https://maps.google.com/maps?q=yucca%20&t=&z=17&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://www.pureblack.de/werbeagentur/">pureblack.de</a></div>
+          </div>
+        </div>
+      </form>
+    </div>
+    <div id="id010" class="modal">
+      <form class="modal-content animate" action="/action_page.php">
+        <div class="imgcontainer">
+          <span onclick="document.getElementById('id010').style.display='none'" class="close" title="Close Modal">&times;</span>
+        </div>
+        <div class="container">
+            <div class="mapouter">
+              <div class="gmap_canvas">
+                <iframe width="1000" height="365" id="gmap_canvas" src="https://maps.google.com/maps?q=the%20grunge&t=&z=17&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://www.pureblack.de/werbeagentur/">pureblack.de</a></div>
+          </div>
+        </div>
+      </form>
+    </div>
+    <div id="id011" class="modal">
+      <form class="modal-content animate" action="/action_page.php">
+        <div class="imgcontainer">
+          <span onclick="document.getElementById('id011').style.display='none'" class="close" title="Close Modal">&times;</span>
+        </div>
+        <div class="container">
+            <div class="mapouter">
+              <div class="gmap_canvas">
+                <iframe width="1000" height="365" id="gmap_canvas" src="https://maps.google.com/maps?q=the%20grunge&t=&z=17&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://www.pureblack.de/werbeagentur/">pureblack.de</a></div>
+          </div>
+        </div>
+      </form>
+    </div>
+    <div id="id012" class="modal">
+      <form class="modal-content animate" action="/action_page.php">
+        <div class="imgcontainer">
+          <span onclick="document.getElementById('id012').style.display='none'" class="close" title="Close Modal">&times;</span>
+        </div>
+        <div class="container">
+            <div class="mapouter">
+              <div class="gmap_canvas">
+                <iframe width="1000" height="365" id="gmap_canvas" src="https://maps.google.com/maps?q=the%20grunge&t=&z=17&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://www.pureblack.de/werbeagentur/">pureblack.de</a></div>
+          </div>
+        </div>
+      </form>
+    </div>
+    <div id="id013" class="modal">
+      <form class="modal-content animate" action="/action_page.php">
+        <div class="imgcontainer">
+          <span onclick="document.getElementById('id013').style.display='none'" class="close" title="Close Modal">&times;</span>
+        </div>
+        <div class="container">
+            <div class="mapouter">
+              <div class="gmap_canvas">
+                <iframe width="1000" height="365"
+                 id="gmap_canvas" 
+                 src="https://maps.google.com/maps?q=the%20first&t=&z=17&ie=UTF8&iwloc=&output=embed" 
+                 frameborder="0" 
+                 scrolling="no" marginheight="0" 
+                 marginwidth="0">
+                </iframe>
+                <a href="https://www.pureblack.de/werbeagentur/"></a>
+              </div>
+            </div>
+        </div>
+      </form>
+    </div>
+    <div id="id014" class="modal">
+      <form class="modal-content animate" action="/action_page.php">
+        <div class="imgcontainer">
+          <span onclick="document.getElementById('id014').style.display='none'" class="close" title="Close Modal">&times;</span>
+        </div>
+        <div class="container">
+            <div class="mapouter">
+              <div class="gmap_canvas">
+                <iframe width="1000" height="365"
+                 id="gmap_canvas" 
+                 src="https://maps.google.com/maps?q=the%20first&t=&z=17&ie=UTF8&iwloc=&output=embed" 
+                 frameborder="0" 
+                 scrolling="no" marginheight="0" 
+                 marginwidth="0">
+                </iframe>
+                <a href="https://www.pureblack.de/werbeagentur/"></a>
+              </div>
+            </div>
+        </div>
+      </form>
+    </div>
+    <div id="id015" class="modal">
+      <form class="modal-content animate" action="/action_page.php">
+        <div class="imgcontainer">
+          <span onclick="document.getElementById('id015').style.display='none'" class="close" title="Close Modal">&times;</span>
+        </div>
+        <div class="container">
+            <div class="mapouter">
+              <div class="gmap_canvas">
+                <iframe width="1000" height="365"
+                 id="gmap_canvas" 
+                 src="https://maps.google.com/maps?q=the%20first&t=&z=17&ie=UTF8&iwloc=&output=embed" 
+                 frameborder="0" 
+                 scrolling="no" marginheight="0" 
+                 marginwidth="0">
+                </iframe>
+                <a href="https://www.pureblack.de/werbeagentur/"></a>
+              </div>
+            </div>
+        </div>
+      </form>
+    </div>
+    <div id="id10" class="modal">
+      <form class="modal-content animate" action="/action_page.php">
+        <div class="imgcontainer">
+          <span onclick="document.getElementById('id10').style.display='none'" class="close" title="Close Modal">&times;</span>
+        </div>
+        <div class="container">
+          <div class="mapouter">
+            <div class="gmap_canvas">
+              <iframe width="1000" height="365" id="gmap_canvas" src="https://maps.google.com/maps?q=the%20secret&t=&z=17&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+              <a href="https://www.pureblack.de/werbeagentur/">
+              </a>
+            </div>
+          </div>
+        </div>
+      </form>
+    </div>
+    <div id="id11" class="modal">
+      <form class="modal-content animate" action="/action_page.php">
+        <div class="imgcontainer">
+          <span onclick="document.getElementById('id11').style.display='none'" class="close" title="Close Modal">&times;</span>
+        </div>
+        <div class="container">
+          <div class="mapouter">
+            <div class="gmap_canvas">
+              <iframe width="1000" height="365" id="gmap_canvas" src="https://maps.google.com/maps?q=the%20secret&t=&z=17&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+              <a href="https://www.pureblack.de/werbeagentur/">
+              </a>
+            </div>
+          </div>
+        </div>
+      </form>
+    </div>
+    <div id="id12" class="modal">
+      <form class="modal-content animate" action="/action_page.php">
+        <div class="imgcontainer">
+          <span onclick="document.getElementById('id12').style.display='none'" class="close" title="Close Modal">&times;</span>
+        </div>
+        <div class="container">
+          <div class="mapouter">
+            <div class="gmap_canvas">
+              <iframe width="1000" height="365" id="gmap_canvas" src="https://maps.google.com/maps?q=the%20secret&t=&z=17&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+              <a href="https://www.pureblack.de/werbeagentur/">
+              </a>
+            </div>
+          </div>
+        </div> 
+      </form>
+    </div>
+  </body>
+  <script src="https://www.gstatic.com/firebasejs/5.8.1/firebase.js"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+  <script src="js/main.js"></script>
+</html>
